@@ -124,6 +124,7 @@ p {
   h3,
   h4 {
     line-height: 1;
+    font-weight: normal;
   }
 }
 /*  global classes */
@@ -145,6 +146,10 @@ p {
 .btn:hover {
   color: var(--clr-primary-1);
   background: var(--clr-primary-8);
+}
+
+h2 span {
+  color: var(--clr-primary-5);
 }
 
 /*
@@ -261,16 +266,109 @@ Navbar
 Hero
 ===============
 */
+
+ .hero-container {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   text-align: center;
+   background-image: url(../images/main.jpeg);
+   background-size: cover;
+   background-position: center;
+   height: 100vh;
+   
+  }
+  /* .hero {
+ } */
+
+ .hero h1 {
+   /* text-align: center; */
+   color:white;
+   font-weight: normal;
+   
+ }
+
+ .hero p {
+   font-size: 16px;
+   text-align: center;
+   color: white;
+ }
+
+ .btn1 {
+   background-color:  var(--clr-white);
+   color: var(--clr-primary-5);
+   padding: 0.75rem 1.25rem;
+   font-size: 1.15rem
+ }
 /*
 =============== 
 About
 ===============
 */
+.about {
+  margin:30px;
+}
+.btn2 {
+  /* font-size: 0.875rem; */
+  width: 146px;
+}
+.about h2 {
+  text-align: center;
+  margin: 2em; 
+  font-weight: normal;
+
+}
+
+.about-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about .explore {
+  display: flex;
+  flex-direction: column;
+  margin: 3em;
+}
+.about img {
+  width: 40vw;
+}
 /*
 =============== 
 Services
 ===============
 */
+.ourservices {
+  background-color: var(--clr-grey-10);
+}
+.ourservices h2 {
+  text-align: center;
+  /* margin:1em;  */
+  padding:1.75em;
+  font-weight: normal;
+}
+
+.servis-p-container {
+  display: flex;
+  justify-content: space-around;
+  margin:30px;
+}
+
+
+.servis-p-container i {
+  background-color: var(--clr-primary-5);
+  padding: 17px;
+  font-size: 1.95em;
+  color: var(--clr-grey-3);
+  display: inline;
+  float: left;
+  margin: 0 0.5em 0.5em;
+  /* position: relative; */
+  /* vertical-align: middle; */
+}
+
+.servis-p-container h4 {
+  margin-bottom: 6px;
+}
 
 /*
 =============== 
@@ -278,20 +376,172 @@ Featured Tours
 ===============
 */
 
+
+.tours h2 {
+  text-align: center;
+  padding:1.75em;
+  font-weight: normal;
+}
+.tour-p-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 1.65em;
+}
+
+.tour-c-container {
+  display: flex;
+  flex-direction: column;
+  background-color:var(--clr-grey-10) ;
+  width: 350px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.tourphoto {
+  width: 100%;
+  position: relative;
+}
+
+.tour-detail {
+  margin:15px;
+  display: inline;
+  /* flex-direction: column; */
+}
+.tour-detail p:first-child {
+  width: 100%;
+}
+
+.tour-bottom {
+  display: flex;
+  justify-content: space-between;
+  color: var(--clr-primary-5);
+}
+.tour-bottom p {
+  color: var(--clr-primary-5);
+}
+.tourphoto img {
+  position: relative;
+  width: 100%;
+  z-index: 1;
+}
+.tourphoto p {
+  position: absolute;
+  /* top: 100%;
+  left: 100%; */
+  bottom: 0;
+  right: 0;
+  background-color: #52d1da;
+  color: #102a42;
+  z-index: 2;
+  margin-bottom: 0;
+}
+
+/* .tours a {
+  text-align: center;
+} */
+.btn3 {
+  display: flex;
+  text-align: center;
+  margin: 1em auto;
+  justify-content: center;
+  width: 146px;
+  margin-bottom: 2em;
+}
 /*
 =============== 
 Contact
 ===============
 */
+.contact {
+  background-color: var(--clr-primary-5);
+}
 
+/* .contact div:first-child {
+  margin-bottom: 2em;
+} */
+.contact-top {
+  color: white;
+  margin: 2em 1.5em 0em 1.5em;
+  margin-bottom: 0;
+  display: flex;
+}
+.contact-top h3 {
+ padding-top: 2em;
+ width: auto;
+}
+.contact-p {
+  margin-left: 2em;
+  color: var(--clr-grey-10);
+  opacity: 0.7;
+  font-size: 13px;
+  margin-bottom: 56px;
+}
+
+.contact-top input {
+  /* flex-direction: row; */
+  width: 260px;
+  height: 30px;
+  margin-top: 56px; 
+  margin-left: 40px;
+}
+
+
+.btn4 {
+  background-color: var(--clr-primary-8);
+  color: var(--clr-grey-1);
+  height: 30px;
+  margin: 56px 10px 0 10px;
+  padding: 0.375rem 0.75rem;
+  font-size: 12px;
+}
 /*
 =============== 
 Gallery
 ===============
 */
 
+.gallery-photos {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.gallery-photos img {
+  width: 25%;
+}
+
 /*
 =============== 
 Footer
 ===============
 */
+footer {
+  background-color: var(--clr-grey-1);
+  color: var(--clr-primary-10);
+  text-align: center;
+}
+
+.footer-box {
+  padding: 1.5em;
+}
+
+footer ul {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+
+}
+footer li {
+  list-style: none;
+  margin: 1em;
+}
+footer i {
+  font-size: 20px;
+  padding: 2px;
+}
+
+.footer-box div {
+  padding: 1em;
+}
